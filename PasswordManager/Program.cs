@@ -1,4 +1,5 @@
-﻿
+﻿using System.Diagnostics;
+
 namespace PasswordManager
 {
     public class Program
@@ -7,8 +8,12 @@ namespace PasswordManager
         {
             // Kvar:
             // Tvåfaktorsautentisering
-
             
+            UserManager userManager = new UserManager();
+
+            MenuManager menuManager = new MenuManager();
+            menuManager.LoginMenu();
+
         }
     }
 }
